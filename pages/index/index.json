@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "head-title": "../../components/head-title/head-title"
+    },
+    "navigationBarBackgroundColor": "#007cbd",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "首页",
+    "navigationStyle": "custom"
+}

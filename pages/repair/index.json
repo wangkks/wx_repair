@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "images-picker": "../../components/imagesPicker/imagesPicker"
+    },
+    "navigationBarBackgroundColor": "#007cbd",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "报修"
+}

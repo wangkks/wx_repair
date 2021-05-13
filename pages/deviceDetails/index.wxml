@@ -1,0 +1,30 @@
+<view class="detail">
+    <view class="item">
+        <label>设备名称</label>
+        <text>XXXXXXXXXX</text>
+    </view>
+    <view class="item">
+        <label>设备编号</label>
+        <text>XXXXXXXXXX</text>
+    </view>
+    <view class="item">
+        <label>设备安装地点</label>
+        <text>北京市海淀区知春路街道XXX</text>
+    </view>
+    <view class="item">
+        <label>设备生产厂家</label>
+        <text>XXX公司</text>
+    </view>
+    <view class="item">
+        <label>生产日期</label>
+        <text>2020-11-18</text>
+    </view>
+    <view class="item">
+        <label>安装厂家</label>
+        <text>XXXXXXXXX</text>
+    </view>
+    <view class="item">
+        <label>安装日期</label>
+        <text>2020-11-18</text>
+    </view>
+</view>

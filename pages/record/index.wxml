@@ -1,0 +1,14 @@
+<view>
+    <rt-navbar tabs="{{tabs}}" bind:change="navchange" index="{{statusIndex}}"></rt-navbar>
+    <view class='list' style="margin-top:{{navHeight}}rpx">
+        <view wx:for="{{recordList}}" wx:key="index" wx:if="{{recordList.length>0}}">
+            
+        </view>
+        <view class='noitem' wx:if="{{recordList.length<=0}}">
+            <image src="http://res.rtmap.com/wx/image_no_order.png" mode='aspectFit'></image>
+            <view class='tip'>
+                <text>暂无数据</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,97 @@
+/* pages/index/index.wxss */
+page{
+    background-color: #f9fafb;
+}
+.top{
+    background-color: #fff;
+    padding-bottom: 43rpx; 
+}
+.banner{
+    width: 100%;
+    text-align: center;
+}
+.banner image{
+    width: 391rpx;
+    height: 231rpx;
+    margin: 40rpx auto 66rpx;
+}
+.search_box{
+    height: 100rpx;
+    border: 1rpx solid #1f2829;
+    margin: 0 33rpx;
+    line-height: 100rpx;
+    box-sizing: border-box;
+    display: flex;
+}
+.search_box input{
+    width: 340rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 14rpx;
+    font-size: 34rpx;
+}
+.search_box .btn{
+    width: 170rpx;
+    height: 100rpx;
+    margin-left: auto;
+    background-color: #0a8fd2;
+    color: #fff;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: -2rpx;
+}
+.search_box .voice{
+    border-right: 1rpx solid #e8e9ec;
+    height: 40rpx;
+    margin-top: 25rpx;
+}
+.search_box .voice image{
+    width: 28rpx;
+    height: 38rpx;
+    margin: 0 26rpx;
+    display: block
+}
+.search_box .photo image{
+    width: 36rpx;
+    height: 38rpx;
+    margin: 0 26rpx;
+}
+.content{
+    background-color: #fff;
+    font-size: 35rpx;
+    color: #353c3c;
+    padding: 0 33rpx 33rpx;
+    margin-top: 20rpx;
+}
+.news{
+    margin-bottom: 22rpx;
+    display: flex;
+    padding-top: 30rpx
+}
+.news.border{
+    border-top: 1rpx solid #f2f3f5;
+}
+.news .title{
+    display: block;
+    margin-bottom: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news .topBtn{
+    font-size: 26rpx;
+    color: #e55561;
+    margin-right: 20rpx;
+}
+.news .subhead{
+    font-size: 26rpx;
+    color: #9ea3a8;
+}
+.news .newImg{
+    width: 229rpx;
+    height: 160rpx;
+    margin-right: 30rpx;
+}

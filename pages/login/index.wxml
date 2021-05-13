@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-name">{{userInfo.nickName}}</text>
+    </view>
+    <!-- <view class="login_agreement">
+        <view class="login_agreement" bindtap="selectShopAll" data-selecteds='{{selecteds}}'>
+            <text class="select_icon {{selecteds?'has_select':''}}"></text>
+            <text class="select_agree">同意即表示已阅读</text>
+        </view>
+        <text class="agreement" bindtap="agreeMent">注册协议/隐私协议</text>
+    </view> -->
+    <view class="loginBox">
+        <button class="market_name" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap="selectedsNumber">微信授权一键登录</button>
+    </view>
+    <view class="mobile-login" bindtap='showDialog'>手机验证码登录</view>
+    <view class="cancel_btn" bindtap="cancelHandler">取消</view>
+    <view class="wrap" wx:if='{{mobileFlag}}'>
+        <view class="cover" bindtap='handleClose'></view>
+        <view class="mobile-content" catchtouchmove='handleTouchMove'>
+            <view class="region-info">
+                <view class="region-info-title">地区</view>
+                <view class="region-info-content">中国</view>                
+            </view>
+            <view class="mobile-info">
+                <view class="mobile-info-title">+{{interCode}}</view>
+                <input type="text" value='{{phone}}' bindinput='getPhoneNum' class="mobile-person" placeholder="请输入手机号" placeholder-class='mobile-person-place' />
+            </view>
+            <view class="login-content">
+                <input type="text" class="code-person" bindinput='handlleInput' value='{{code}}' placeholder="请输入验证码" placeholder-class='code-person-place' />
+                <button class="get-btn" bindtap='getCode' disabled="{{!getChange}}">{{btn_code}}</button>
+            </view>
+            <button class="login-name" bindtap='{{loginBtn?"handleLoginCreate":""}}'>立即登录</button>
+        </view>
+    </view>
+
+</view>
+
+<!--完善资料   登录页弹框暂时不显示  等统一好 弹框的返回路径再显示  html代码现在不影响  也不会展示-->
+<view class="mask" wx:if="{{receiveModel}}"></view>
+<view class="perfect-information" wx:if="{{receiveModel}}">
+    <image class="banner" src="http://res.rtmap.com/sences/image/userGift/banner-login.png"></image>
+    <view class="prefect-btn" bindtap="prefectInfo">完善资料</view>
+    <view class="sure" bindtap='hideReceiveModel'>
+        <image class="close-rule" src="http://res.rtmap.com/sences/image/userGift/close.png"></image>
+    </view>
+
+</view>

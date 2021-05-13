@@ -1,0 +1,28 @@
+<!--pages/index/index.wxml-->
+<head-title titleName="首页"></head-title>
+<view class="top">
+    <view class="banner">
+        <image src="../../images/index/banner.png"></image>
+    </view>
+    <view class="search_box">
+        <input placeholder="请输入"></input>
+        <view class="voice">
+            <image src="../../images/index/icon_voice.png"></image>
+        </view>
+        <view class="photo">
+            <image src="../../images/index/icon_photo.png"></image>
+        </view>
+        <view class="btn">百度一下</view>
+    </view>
+</view>
+<view class="content">
+    <view class="news {{item.img?'border':''}}" wx:for="{{newList}}" wx:key="index">
+        <image wx:if="{{item.img}}" src="{{item.img}}" class="newImg"></image>
+        <view style="flex:1;">
+            <text class="title">{{item.title}}</text>
+            <text class="topBtn" wx:if="{{item.btnType==1}}">置顶</text>
+            <text class="subhead">{{item.newhead}}</text>
+        </view>
+        
+    </view>
+</view>

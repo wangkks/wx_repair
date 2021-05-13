@@ -1,0 +1,10 @@
+.noitem{
+  margin-top: 200rpx;
+  text-align: center;
+}
+.noitem image{
+  width: 468rpx;
+  height: 336rpx;
+  display: block;
+  margin: 0 auto;
+}

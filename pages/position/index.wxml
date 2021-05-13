@@ -1,0 +1,26 @@
+<view class="position" wx:if="{{positionOver}}">
+    <image src="../../images/clockIn/position_img.png"></image>
+</view>
+<view class="clockin" wx:if="{{!positionOver}}">
+    <view class="dian" style="top:0;"></view>
+    <view class="date">打卡时间{{nowDate}}</view>
+    <view class="clockBg">
+        <image src="../../images/clockIn/bg.png" bindtap="scanCodeHandler" class="bg"></image>
+        <view class="time">{{nowTime}}</view>
+        <view class="desc" wx:if="{{successShow}}">已打卡 <text class="success">正常</text></view>
+        <view class="desc" wx:elif="{{catchShow}}">打卡失败 <text class="catch">失败</text></view>
+        <view class="desc" wx:else>已进入打卡范围</view>
+    </view>
+    <view class="detailInfo">
+        <image src="../../images/clockIn/icon_adress.png"></image>
+        <text>地址：湖北省十堰市xx区</text>
+    </view>
+    <view class="detailInfo">
+        <image src="../../images/clockIn/icon_name.png" style=""></image>
+        <text>设备名称：设备名称设备名</text>
+    </view>
+    <view class="detailInfo" style="padding-left:37rpx;">
+        <text>设备编号：设备编号设备编号</text>
+    </view>
+    <view class="dian" style="bottom:0;"></view>
+</view>

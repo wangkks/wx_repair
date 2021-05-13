@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "head-title": "../../components/head-title/head-title"
+    },
+    "navigationStyle": "custom"
+}

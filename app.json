@@ -1,0 +1,61 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/index",
+        "pages/clockIn/index",
+        "pages/deviceDetails/index",
+        "pages/repair/index",
+        "pages/record/index",
+        "pages/position/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "码上维修",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#adb1b6",
+        "selectedColor": "#007cbb",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/index/index.png",
+                "selectedIconPath": "images/index/index_active.png"
+            },
+            {
+                "pagePath": "pages/clockIn/index",
+                "text": "打卡",
+                "iconPath": "images/index/clock_in.png",
+                "selectedIconPath": "images/index/clock_in_active.png"
+            },
+            {
+                "pagePath": "pages/deviceDetails/index",
+                "text": "设备详情",
+                "iconPath": "images/index/device_details.png",
+                "selectedIconPath": "images/index/device_details_active.png"
+            },
+            {
+                "pagePath": "pages/repair/index",
+                "text": "报修",
+                "iconPath": "images/index/repair.png",
+                "selectedIconPath": "images/index/repair_active.png"
+            },
+            {
+                "pagePath": "pages/record/index",
+                "text": "记录",
+                "iconPath": "images/index/record.png",
+                "selectedIconPath": "images/index/record_active.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "为您提供便捷的服务"
+        }
+    }
+}

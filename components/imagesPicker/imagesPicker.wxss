@@ -1,0 +1,35 @@
+.images-picker {
+    background: white;
+}
+.images-preview-area {
+    display: flex;
+    flex-flow: row wrap;
+}
+.image-size {
+    width: 248rpx;
+    height: 248rpx;
+}
+
+.images-add {
+    position: relative;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+}
+
+.add-image {
+    width: 38rpx;
+    height: 38rpx;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    margin-top: -19rpx;
+    margin-left: -19rpx;
+}
+
+.image-cell {
+    margin-right: 16rpx;
+    margin-bottom: 16rpx;
+}

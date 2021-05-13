@@ -1,0 +1,142 @@
+/* pages/repair/index.wxss */
+page{
+    background-color: #f8f8f8;
+    padding: 0 0 200rpx;
+}
+.deviceInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90rpx;
+    font-size: 26rpx;
+    padding: 0 72rpx;
+    border-bottom: 1rpx solid #ecedf0;
+    background-color: #fff;
+}
+.deviceInfo label{
+    color: #adb1b6;
+    width: 180rpx;
+}
+.deviceInfo input{
+    /* flex: 1; */
+    margin-left: auto;
+    color: #231815;
+}
+.question{
+    margin-top: 10rpx;
+    padding: 15rpx;
+}
+.questionItem{
+    background-color: #fff;
+    border-radius: 10rpx;
+    box-shadow: 0 2rpx 8rpx 0rpx rgba(0, 0, 0, 0.05);
+    padding: 30rpx;
+    margin-bottom: 20rpx;
+    min-height: 300rpx;
+    color: #575757;
+}
+.questionItem_title{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.questionItem_title label,
+.questionItem_detail label,
+.questionItem_upload label{
+    width: 160rpx;
+    display: inline-block;
+    vertical-align: top;
+}
+.questionItem_title input{
+    flex: 1;
+    height: 60rpx;
+    line-height: 60rpx;
+    border: 1rpx solid #eef0f1;
+    border-radius: 12rpx;
+    padding: 0 20rpx;
+    color: #575757;
+}
+.length{
+    position: absolute;
+    right: 18rpx;
+    bottom: 10rpx;
+    font-size: 28rpx;
+    color: #bbb;
+}
+.questionItem_detail{
+    display: flex;
+    position: relative;
+    margin: 30rpx 0;
+}
+.questionItem_detail textarea{
+    flex: 1;
+    height: 160rpx;
+    border: 1rpx solid #eef0f1;
+    border-radius: 12rpx;
+    padding: 20rpx;
+    color: #575757;
+}
+.questionItem_upload{
+    display: flex;
+}
+/* .questionItem_upload image{
+    width: 60rpx;
+    height: 44rpx;
+    margin-right: 20rpx;
+} */
+.iconVio{
+    width: 248rpx;
+    height: 248rpx;
+}
+.addBtn{
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    background-color: #007cbd;
+    font-size: 38rpx;
+    color: #fff;
+    border-radius: 36rpx;
+    margin: 20rpx 0 0 0;
+    float: right;
+    line-height: 42rpx;
+}
+.deleteBtn{
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    background-color: #fff;
+    font-size: 38rpx;
+    color: #898989;
+    border-radius: 36rpx;
+    margin: 20rpx 20rpx 0 0;
+    float: right;
+    border: 1rpx solid #bbb;
+    box-sizing: border-box;
+    margin-left: 20rpx;
+    line-height: 42rpx;
+}
+.footer{
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 20rpx;
+}
+.footer text{
+    width: 120rpx;
+    height: 55rpx;
+    line-height: 55rpx;
+    text-align: center;
+    background-color: #007cbd;
+    font-size: 30rpx;
+    color: #fff;
+    display: inline-block;
+    border-radius: 36rpx;
+    margin-right: 20rpx;
+}
+.footer text:last-child{
+    margin-right: 0;
+}

@@ -1,0 +1,209 @@
+/**index.wxss**/
+.container {
+    width: 100%;
+    background: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-name {
+  color: #aaa;
+}
+
+.login_agreement {
+    display: flex;
+    align-items: center;
+}
+.select_icon {
+    width: 36rpx;
+    height: 36rpx;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8rpx;
+}
+
+.has_select {
+    border-color: #e41335;
+    background: url(http://res.rtmap.com/wx/guide/index/icon_selected.png) no-repeat;
+    background-size: cover;
+}
+
+.select_agree {
+    padding-right: 6rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 1);
+}
+
+.agreement {
+    font-size: 28rpx;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(228, 19, 53, 1);
+}
+
+.market_name {
+    width: 560rpx;
+    height: 90rpx;
+    background: #1aad19;
+    color: #fff;
+    border: none;
+    line-height: 90rpx;
+    border-radius: 45rpx;
+    margin-top: 64rpx;
+}
+
+.mobile-login {
+    width: 560rpx;
+    height: 90rpx;
+    background: #f8f8f8;
+    color: #222;
+    border: none;
+    line-height: 90rpx;
+    border-radius: 45rpx;
+    margin-top: 32rpx;
+    text-align: center;
+}
+
+.cancel_btn {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 40rpx;
+    font-size: 30rpx;
+    text-align: center;
+    border-bottom: 1rpx solid #666;
+}
+
+  .wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .cover {
+    background: #000;
+    opacity: .5;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .mobile-content {
+    width: 520rpx;
+    position: fixed;
+    /* height: 540rpx; */
+    height: 670rpx;
+    background: #fff;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    padding: 0 40rpx;
+    margin-left: -300rpx;
+    z-index: 999;
+    border-radius: 10rpx;
+}
+.region-info, .mobile-info {
+    width: 100%;
+    margin-bottom: 63rpx;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-bottom: 12rpx;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.region-info {
+    margin-top: 96rpx;
+}
+
+.region-info-title, .mobile-info-title {
+    width: 120rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    font-size: 30rpx;
+    border-right: 2rpx solid #ccc;
+}
+
+.region-info-content {
+    position: relative;
+    flex: 1;
+    height: 42rpx;
+    padding-right: 24rpx;
+    line-height: 42rpx;
+    font-size: 30rpx;
+}
+
+.mobile-person {
+    padding-left: 20rpx;
+    color: #000;
+    text-align: left;
+    font-size: 30rpx;
+}
+
+.mobile-person-place {
+    color: #ccc;
+}
+
+.login-content {
+    border-bottom: 2rpx solid #ccc;
+    display: flex;
+}
+
+.code-person {
+    width: 360rpx;
+    height: 42rpx;
+    margin-bottom: 7rpx;
+    padding: 0;
+    line-height: 42rpx;
+    color: #000;
+    text-align: left;
+    border-right: 1px solid #ccc;
+    font-size: 30rpx;
+}
+
+.code-person-place {
+    color: #ccc;
+}
+
+.get-btn {
+    background: #fff;
+    width: 160rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    padding: 0;
+    padding-left: 4rpx;
+    margin-bottom: 0;
+    font-size: 30rpx;
+}
+
+.get-btn::after {
+    border: none;
+}
+
+.login-name {
+    width: 240rpx;
+    height: 80rpx;
+    background: #f21b7b;
+    color: #fff;
+    border: none;
+    line-height: 80rpx;
+    margin-top: 99rpx;
+    border-radius: 40rpx;
+    font-size: 36rpx;
+}

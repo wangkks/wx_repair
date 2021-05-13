@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+      "rt-navbar": "../../components/navbar/navbar"
+  }
+}

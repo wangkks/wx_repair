@@ -1,0 +1,21 @@
+<!--pages/clockIn/index.wxml-->
+<head-title titleName="打卡"></head-title>
+<view class="clockin"  wx:if="{{!showInputCode}}">
+    <image src="../../images/clockIn/icon_code.png" bindtap="scanCodeHandler"></image>
+    <image src="../../images/clockIn/icon_input.png" bindtap="inputCodeHandler"></image>
+</view>
+<view class="inputCodeBox" wx:if="{{showInputCode}}">
+    <view class="inputCodeContent">
+        <view class="pos">
+            <view wx:for="{{emptyList}}" wx:key="index" class="posV">
+                <view wx:if="{{code.length == index}}" class="cursor"></view>
+                <text>{{item.code}}</text>
+            </view>
+        </view>
+        <input v-model="inputCode" bindinput="inputHandler" maxlength='6' focus='true' auto-focus='true'></input>
+    </view>
+    <view class="button">
+        <text bindtap="confirmHandler">确定</text>
+        <text style="margin-left: 60rpx;" bindtap="cancelHandler">取消</text>
+    </view>
+</view>
